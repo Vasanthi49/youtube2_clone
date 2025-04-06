@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liked Videos - Light Theme</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="likedvideos.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar (Optional) -->
+    <aside class="sidebar">
+        <h2>Library</h2>
+        <ul>
+          <li>
+            <span>📜</span>
+            <a href="history.html">History</a>
+          </li>
+          <li>
+            <span>⏳</span>
+            <a href="watch later.html" class="active">Watch Later</a>
+          </li>
+          <li>
+            <span>📁</span>
+            <a href="playlist.html">Playlists</a>
+          </li>
+          <li>
+            <span>❤️</span>
+            <a href="likedvideos.html">Liked Videos</a>
+          </li>
+        </ul>
+      </aside>
+    
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Liked Videos</h1>
+      <p class="info-text">
+        Videos you have liked will appear here.
+      </p>
+
+      <!-- Grid Container for Liked Video Cards -->
+      <div class="video-grid">
+        <!-- Card 1 -->
+        <div class="video-card">
+          <video class="video" src="videos/news2.mp4" controls></video>
+          <h3>Sunita Williams Return To Earth</h3>
+          <p>By Jane Smith | 2 hours ag</p>
+        
+        </div>
+
+        <!-- Card 2 -->
+        <div class="video-card">
+          <video class="video" src="videos/rohitsir.mp4" controls></video>
+          <h3>Java 12[Code Snippets]</h3>
+          <p>TapacadLive | 2 days ago</p>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

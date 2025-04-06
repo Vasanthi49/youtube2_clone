@@ -1,0 +1,120 @@
+/* ========== Base Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ========== Body & Overall Theme ========== */
+  body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* ========== Container ========== */
+  /* Holds the sidebar and main content side by side */
+  .container {
+    display: flex;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* ========== Sidebar Styles (Optional) ========== */
+  .sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+  }
+  
+  .sidebar h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #000;
+  }
+  
+  .sidebar ul li a.active {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* ========== Main Content ========== */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-text {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* ========== Video Grid ========== */
+  .video-grid {
+    display: grid;
+    /* Each card is at least 250px wide; auto-fill more columns if space allows */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between cards */
+  }
+  
+  /* ========== Video Card ========== */
+  .video-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+    text-align: center; /* Center the text/images if you want */
+  }
+  
+  .video-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 150px;   /* Adjust as needed */
+    object-fit: cover;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .video-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .video-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  .video{
+    width:250px;
+  }

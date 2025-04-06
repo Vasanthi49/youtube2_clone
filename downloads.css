@@ -1,0 +1,113 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* White Background */
+    color: black;
+    display: flex;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+/* YouTube Styled Text */
+.header .youtube-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Profile Icon */
+.header .profile {
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #eee;
+    padding-top: 70px;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #d0d0d0;
+    font-weight: bold;
+}
+
+/* Make Upgrade Text Lighter */
+.sidebar a.upgrade {
+    color: #888;
+    font-weight: normal;
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px;
+    padding: 100px 20px;
+    flex-grow: 1;
+}
+
+/* Download List */
+.download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.download-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info p {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}

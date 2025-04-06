@@ -1,0 +1,258 @@
+
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: black;
+    display: flex;
+}
+
+/* Header */
+
+/* YouTube Styled Text */
+.header .youtube-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Profile Icon */
+.header .profile {
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 60px); /* Adjust height so it doesn't go outside the screen */
+    background-color: #eee;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 60px; /* Push it below the header */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #d0d0d0;
+    font-weight: bold;
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px; /* Space for sidebar */
+    padding: 100px 20px; /* Adjust for fixed header */
+    flex-grow: 1;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.categories {
+    margin: 20px 0;
+}
+
+.category-btn {
+    background: white;
+    color:black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.album-container {
+    display: flex;
+    flex-wrap: nowrap; /* Keeps videos in a row */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    gap: 20px; /* Space between items */
+    padding: 10px;
+}
+
+.album {
+    width: 180px; /* Adjust width */
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.album-video {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer; /* Shows clickable cursor */
+}
+
+.album-title {
+    font-size: 14px;
+    font-weight: bold;
+    color:black;
+    margin-top: 5px;
+}
+
+.album-artist {
+    font-size: 12px;
+    color: gray;
+}
+.episodes {
+    display: flex;
+    gap: 15px;
+}
+
+.episode {
+    position: relative;
+    width: 250px;
+}
+
+.episode video {
+    width: 60%;
+    border-radius: 8px;
+    display: block;
+}
+.episode:hover video {
+    display: block;
+    
+}
+
+.episode .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.play-btn {
+    background: black;
+    color:white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.episode.playing video {
+    display: block;
+}
+
+.episode.playing .overlay {
+    display: none;
+}
+.album-list {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures all videos stay in one row */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    gap: 15px; /* Space between videos */
+    padding: 10px;
+}
+
+.album-item {
+    width: 180px; /* Adjust width for better spacing */
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.album-video {
+    width: 180px; /* Set fixed width */
+    height: 180px; /* Set fixed height */
+    object-fit: cover; /* Ensures the video fits properly */
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.album-title {
+    font-size: 14px;
+    font-weight: bold;
+    color:black;
+    margin-top: 5px;
+}
+
+.album-artist {
+    font-size: 12px;
+    color: gray;
+}
+.genre-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Spacing between buttons */
+    padding: 10px;
+}
+
+.genre-button {
+    display: flex;
+    align-items: center;
+    background-color:white; /* Dark background */
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.genre-button:hover {
+    background-color: #333; /* Slight hover effect */
+}
+
+.genre-button::before {
+    content: "";
+    width: 5px; /* Left colored bar */
+    height: 80%;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: var(--genre-color, #ff0000); /* Dynamic color */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed; /* Keeps it fixed on the screen */
+    top: 0;
+    left: 0;
+    width: 240px; /* Adjust as needed */
+    height: 100vh; /* Full height */
+    background-color: white; /* Dark background */
+    padding: 20px 0;
+    overflow-y: auto; /* Allows scrolling inside the sidebar */
+}
+
+/* Ensure the main content does not overlap */
+.main-content {
+    margin-left: 260px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
