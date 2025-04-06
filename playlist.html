@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Playlists</title>
+  <link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+  <div class="container">
+    
+    <aside class="sidebar">
+        <h2>Library</h2>
+        <ul>
+          <li>
+            <span>📜</span>
+            <a href="history.html">History</a>
+          </li>
+          <li>
+            <span>⏳</span>
+            <a href="watch later.html" class="active">Watch Later</a>
+          </li>
+          <li>
+            <span>📁</span>
+            <a href="playlist.html">Playlists</a>
+          </li>
+          <li>
+            <span>❤️</span>
+            <a href="likedvideos.html">Liked Videos</a>
+          </li>
+        </ul>
+      </aside>
+    <!-- Main Content -->
+    <main class="content">
+      <h1>Playlists</h1>
+      <p class="info-text">
+        Your created and saved playlists will appear here.
+      </p>
+
+      <!-- Playlist Grid -->
+      <div class="video-grid">
+        <!-- Playlist Card 1 -->
+        <div class="video-card">
+         
+            <video class="video" src="videos/favmusic.mp4" controls></video>
+            
+          <div class="video-details">
+            <h3>My Favorite Music</h3>
+            <p>Playlist • 10 videos</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <video class="video" src="videos/web.mp4" controls></video>
+
+          <div class="video-details">
+            <h3>Web Development Tutorials</h3>
+            <p>Playlist • 25 videos</p>
+          </div>
+        </div>
+
+        <!-- Add more playlist cards as needed -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>
