@@ -1,90 +1,69 @@
-/* ========== Base Reset ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* ========== Body & Overall Theme ========== */
-  body {
-    background-color: #f9f9f9; /* Light background */
+    body {
+    background-color: #f9f9f9; 
     font-family: Arial, sans-serif;
-    color: #333;             /* Dark text for contrast */
+    color: #333;           
   }
-  
-  /* ========== Layout Container ========== */
-  .container {
+    .container {
     display: flex;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; 
   }
-  
-  /* ========== Sidebar Styles ========== */
-  .sidebar {
+    .sidebar {
     width: 240px;
-    background-color: #fff;           /* White sidebar */
+    background-color: #fff;        
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
   }
-  
   .sidebar h2 {
     color: #333;
     font-size: 22px;
     margin-bottom: 20px;
   }
-  
   .sidebar ul {
     list-style: none;
   }
-  
   .sidebar ul li {
     margin-bottom: 10px;
   }
-  
   .sidebar ul li a {
     text-decoration: none;
-    color: #666;  /* Grayish text */
+    color: #666;   
     font-size: 16px;
     transition: color 0.2s;
   }
-  
   .sidebar ul li a:hover {
-    color: #000;  /* Darkens on hover */
+    color: #000;  
   }
-  
   .sidebar ul li a.active {
     color: #000;
     font-weight: bold;
   }
-  
-  /* ========== Main Content Styles ========== */
-  .content {
+    .content {
     flex: 1;
     padding: 20px;
     background-color: #f9f9f9;
   }
-  
   .content h1 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
   }
-  
   .info-text {
     margin-bottom: 20px;
     color: #666;
     line-height: 1.5;
   }
-  
-  /* ========== Playlist Grid ========== */
-  .video-grid {
+    .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
   }
-  
-  /* ========== Playlist Card Styles ========== */
-  .video-card {
+    .video-card {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -93,22 +72,18 @@
     transition: transform 0.2s;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
   .video-card:hover {
     transform: translateY(-3px);
   }
-  
   .thumbnail {
     width: 100%;
     height: 140px;
     object-fit: cover;
-    background-color: #ccc; /* Placeholder background */
+    background-color: #ccc; 
   }
-  
   .video-details {
     padding: 10px;
   }
-  
   .video-details h3 {
     font-size: 16px;
     margin-bottom: 5px;
