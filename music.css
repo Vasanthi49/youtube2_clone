@@ -1,6 +1,3 @@
-
-
-/* General Reset */
 body {
     margin: 0;
     padding: 0;
@@ -9,17 +6,11 @@ body {
     color: black;
     display: flex;
 }
-
-/* Header */
-
-/* YouTube Styled Text */
 .header .youtube-logo {
     font-size: 24px;
     font-weight: bold;
     color: red;
 }
-
-/* Profile Icon */
 .header .profile {
     font-size: 18px;
     background-color: gray;
@@ -28,19 +19,15 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-
-/* Sidebar */
 .sidebar {
     width: 250px;
-    height: calc(100vh - 60px); /* Adjust height so it doesn't go outside the screen */
+    height: calc(100vh - 60px);
     background-color: #eee;
     padding-top: 20px;
     position: fixed;
     left: 0;
-    top: 60px; /* Push it below the header */
+    top: 60px; 
 }
-
-/* Sidebar Links */
 .sidebar a {
     text-decoration: none;
     color: black;
@@ -48,35 +35,28 @@ body {
     padding: 15px 20px;
     font-size: 18px;
 }
-
 .sidebar a:hover, .sidebar a.active {
     background-color: #d0d0d0;
     font-weight: bold;
 }
-
-/* Main Content */
 .content {
-    margin-left: 270px; /* Space for sidebar */
-    padding: 100px 20px; /* Adjust for fixed header */
+    margin-left: 270px; 
+    padding: 100px 20px; 
     flex-grow: 1;
 }
-
 .main-content {
     flex: 1;
     padding: 20px;
 }
-
 .search-bar {
     width: 80%;
     padding: 10px;
     border-radius: 20px;
     border: none;
 }
-
 .categories {
     margin: 20px 0;
 }
-
 .category-btn {
     background: white;
     color:black;
@@ -86,37 +66,30 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
-
-
-
 .album-container {
     display: flex;
-    flex-wrap: nowrap; /* Keeps videos in a row */
-    overflow-x: auto; /* Enables horizontal scrolling if needed */
-    gap: 20px; /* Space between items */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px;
     padding: 10px;
 }
-
 .album {
-    width: 180px; /* Adjust width */
+    width: 180px;
     text-align: center;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
 }
-
 .album-video {
     width: 100%;
     border-radius: 10px;
     display: block;
-    cursor: pointer; /* Shows clickable cursor */
+    cursor: pointer; 
 }
-
 .album-title {
     font-size: 14px;
     font-weight: bold;
     color:black;
     margin-top: 5px;
 }
-
 .album-artist {
     font-size: 12px;
     color: gray;
@@ -125,12 +98,10 @@ body {
     display: flex;
     gap: 15px;
 }
-
 .episode {
     position: relative;
     width: 250px;
 }
-
 .episode video {
     width: 60%;
     border-radius: 8px;
@@ -140,7 +111,6 @@ body {
     display: block;
     
 }
-
 .episode .overlay {
     position: absolute;
     width: 100%;
@@ -154,7 +124,6 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .play-btn {
     background: black;
     color:white;
@@ -163,59 +132,54 @@ body {
     padding: 10px 15px;
     border-radius: 50%;
 }
-
 .episode.playing video {
     display: block;
 }
-
 .episode.playing .overlay {
     display: none;
 }
 .album-list {
     display: flex;
-    flex-wrap: nowrap; /* Ensures all videos stay in one row */
-    overflow-x: auto; /* Enables horizontal scrolling if needed */
-    gap: 15px; /* Space between videos */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 15px; 
     padding: 10px;
 }
 
 .album-item {
-    width: 180px; /* Adjust width for better spacing */
+    width: 180px;
     text-align: center;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
 }
 
 .album-video {
-    width: 180px; /* Set fixed width */
-    height: 180px; /* Set fixed height */
-    object-fit: cover; /* Ensures the video fits properly */
+    width: 180px; 
+    height: 180px; 
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     cursor: pointer;
 }
-
 .album-title {
     font-size: 14px;
     font-weight: bold;
     color:black;
     margin-top: 5px;
 }
-
 .album-artist {
     font-size: 12px;
     color: gray;
 }
 .genre-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Spacing between buttons */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px; 
     padding: 10px;
 }
-
 .genre-button {
     display: flex;
     align-items: center;
-    background-color:white; /* Dark background */
+    background-color:white; 
     color: black;
     padding: 12px 20px;
     border-radius: 8px;
@@ -225,34 +189,28 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
 .genre-button:hover {
-    background-color: #333; /* Slight hover effect */
+    background-color: #333; 
 }
-
 .genre-button::before {
     content: "";
-    width: 5px; /* Left colored bar */
+    width: 5px; 
     height: 80%;
     border-radius: 3px;
     margin-right: 10px;
-    background-color: var(--genre-color, #ff0000); /* Dynamic color */
+    background-color: var(--genre-color, #ff0000); 
 }
-
-/* Sidebar Styling */
 .sidebar {
-    position: fixed; /* Keeps it fixed on the screen */
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 240px; /* Adjust as needed */
-    height: 100vh; /* Full height */
-    background-color: white; /* Dark background */
+    width: 240px; 
+    height: 100vh;
+    background-color: white; 
     padding: 20px 0;
-    overflow-y: auto; /* Allows scrolling inside the sidebar */
+    overflow-y: auto; 
 }
-
-/* Ensure the main content does not overlap */
 .main-content {
-    margin-left: 260px; /* Adjust based on sidebar width */
+    margin-left: 260px; 
     padding: 20px;
 }
