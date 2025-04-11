@@ -1,101 +1,77 @@
-/* ========== Base Reset (Optional) ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* ========== Body & Global Styles ========== */
-  body {
+    body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light background behind content */
+    background-color: #f9f9f9; 
     color: #333;
   }
-  
-  /* ========== Hero Section ========== */
-  .hero {
-    /* Vibrant multi-stop gradient */
+    .hero {
 background-color: beige;
     text-align: center;
     color: black;
     padding: 60px 20px;
     position: relative;
   }
-  
-  /* Large, eye-catching title in hero */
-  .hero-title {
+    .hero-title {
     font-size: 48px;
     margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Subtle glow */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
   }
-  
-  /* Fun music icon sized similarly to the title */
-  .music-icon {
+    .music-icon {
     font-size: 48px;
     margin-left: 10px;
   }
-  
-  /* Smaller subtitle under hero title */
-  .hero-subtitle {
+    .hero-subtitle {
     font-size: 18px;
     opacity: 0.9;
   }
-  
-  /* ========== Main Content ========== */
-  .content {
-    max-width: 1200px; /* Center if desired */
+    .content {
+    max-width: 1200px; 
     margin: 0 auto;    
     padding: 20px;
   }
-  
   .content h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
   }
-  
   .content p {
     margin-bottom: 20px;
     color: #555;
   }
-  
-  /* ========== Video Grid ========== */
-  .video-grid {
+    .video-grid {
     display: flex;
-    flex-wrap: wrap; /* Wrap to the next row if not enough space */
-    gap: 20px;       /* Space between cards */
+    flex-wrap: wrap; 
+    gap: 20px;       
   }
-  
-  /* ========== Video Card ========== */
-  .video-card {
+.video-card {
     background-color: #fff;
-    border: 3px solid gray;  /* Bright border to match gradient color */
+    border: 3px solid gray;  
     border-radius: 8px;
-    width: 280px;               /* Fixed width for each card */
+    width: 280px;              
     padding: 15px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-  
   .video-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
-  
   .thumbnail {
     width: 100%;
-    height: 160px;  /* Adjust as needed */
+    height: 160px; 
     object-fit: cover;
     background-color: #ddd; 
     margin-bottom: 10px;
   }
-  
   .video-card h3 {
     font-size: 16px;
     margin-bottom: 5px;
     color: #333;
   }
-  
   .video-card p {
     font-size: 14px;
     color: #666;
